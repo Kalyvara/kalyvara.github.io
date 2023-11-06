@@ -3,20 +3,20 @@ Alternative stylesheet for Damiansh's kanji fetching script (Anki flashcards)
 https://damiansh.github.io/waniAnki/instructions
 */
 
-.kanjiInfo{
+.kanjiInfo {
 	display:block;
 	margin: auto;
     max-width: 800px;
 }
 	
-.item1 { grid-area: header;font-size: 30px; } /*item 1 - meaning */ 
-.entry { grid-area: kanjiBox;font-size: 1;text-align:center; } /*grid */ 
-.item2 { grid-area: menu; font-size:50px; } /*item 2 - slug*/ 
-.item3 { grid-area: main; font-size: 30px;} /*item 3 - radicals*/ 
-.item4 { grid-area: right;font-size: 20px; } /*item 4 - readings*/ 
-.item5 { grid-area: footer; font-size: 20px;} /*item 5 - mnemonic*/ 
+.kanjiInfo .item1 { grid-area: header;font-size: 30px; } /*item 1 - meaning */ 
+.kanjiInfo .entry { grid-area: kanjiBox;font-size: 1;text-align:center; } /*grid */ 
+.kanjiInfo .item2 { grid-area: menu; font-size:50px; } /*item 2 - slug*/ 
+.kanjiInfo .item3 { grid-area: main; font-size: 30px;} /*item 3 - radicals*/ 
+.kanjiInfo .item4 { grid-area: right;font-size: 20px; } /*item 4 - readings*/ 
+.kanjiInfo .item5 { grid-area: footer; font-size: 20px;} /*item 5 - mnemonic*/ 
 
-.grid-container {
+.kanjiInfo .grid-container {
   display: grid;
   color:#fff;
   grid-template-areas:
@@ -29,22 +29,22 @@ https://damiansh.github.io/waniAnki/instructions
   padding: 10px;
 }
 
-.grid-container > div {
+.kanjiInfo .grid-container > div {
   background-color: rgba(0, 0, 0, 0.8);
   text-align: center;
   padding: 20px 0;
   
 }
 /* Stroke order diagrams */
-.entry ul {
+.kanjiInfo .entry ul {
 	list-style-type: none;
 }
 
-.kanjiDetails ul.stroke-order li {
+.kanjiInfo ul.stroke-order li {
 	float:left;
 	margin-right: -3px;
 }
-.kanjiDetails ul.stroke-order li div {
+.kanjiInfo ul.stroke-order li div {
 	background-repeat: no-repeat;
 	display: block;
 	width: 58em;
@@ -52,7 +52,7 @@ https://damiansh.github.io/waniAnki/instructions
 	font-size: 1px;
 }
 
-.kanjiDetails ul.stroke-order li:before {
+.kanjiInfo ul.stroke-order li:before {
 	content: '';
 	padding: 0px 0px 0px 0px;
 }
@@ -86,7 +86,7 @@ kanji{
 	color: #FFF;
 	font-weight: 600;
 	}
-.kanjiDetails .component{
+.kanjiInfo .component{
 	background-color:#00a1f1;
 	border-radius: 15px;
     padding-top: 1px;
@@ -95,18 +95,18 @@ kanji{
 	padding-left: 4px;
 	font-weight: 500;
 	}
-.kanjiDetails .ralink{
+.kanjiInfo .ralink{
 	background-color:#00a1f1;
 	border-radius: 15px;
     padding: 3px;
 }
-.kanjiDetails .raimg{
+.kanjiInfo .raimg{
 	-webkit-filter: grayscale(1) invert(1);
     filter: grayscale(1) invert(1);
 	margin-bottom:-5px;
 	}	
 	
-.kanjiDetails a{
+.kanjiInfo a{
  text-decoration: none;
  color:#FFF;
  font-weight: 500;
@@ -141,7 +141,7 @@ slug{
 	color: #FFF;
 	}	
 	
-.kanjiDetails .translation{
+.kanjiInfo .translation{
 	background-color:#f100a1;
 	border-radius: 15px;
     padding: 3px;
